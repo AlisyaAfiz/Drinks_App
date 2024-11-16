@@ -9,7 +9,7 @@ const datasource = [
     ],
     type: "Carbonated", bgColor: '#fff9ab', icon: 'bottle-soda-classic'},
   {data:[
-      {key: 'lemon tea', image: require('./img/lemon-tea.jpg')},
+      {key: 'Lemon tea', image: require('./img/lemon-tea.jpg')},
       {key: 'Green tea', image: require('./img/green-tea.jpg')}
     ],
     type: "Tea", bgColor: '#ffb293', icon: 'tea'},
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
       borderColor: '#485945'
   },
   textStyle: {
-    fontSize: 15,
+    fontSize: 14,
     padding: 40,
     textAlignVertical: 'center',
     fontWeight: 'bold',
@@ -46,7 +46,7 @@ const renderItem = ({item}) => {
   return (
       <TouchableOpacity style={styles.opacityStyle}>
         <Text style={styles.textStyle}>{item.key}</Text>
-        <Image source={item.image} style={{width: 200, height: 200}}/>
+        <Image source={item.image} style={{width: 180, height: 180}}/>
       </TouchableOpacity>
   );
 };
